@@ -23,7 +23,27 @@ Using Python, I:
 - Cleaned missing data
 - Transformed genre information
 - Grouped data to find trends
+- Analyzed content by release year
+- Analyzed ratings distribution
 - Created CSV files for Tableau visualization
+
+## Analysis Completed
+
+### Top Countries
+
+Analyzed which countries have the most Netflix titles.
+
+### Top Genres
+
+Identified the most common genres available on Netflix.
+
+### Content Over Time
+
+Compared Movies and TV Shows by release year to understand how Netflix's content library has changed.
+
+### Ratings Distribution
+
+Analyzed the most common ratings across Netflix titles.
 
 ## Files
 
