@@ -33,3 +33,32 @@ top_genres = (
 top_genres.columns = ["genre", "count"]
 
 top_genres.to_csv("Top_10_genres.csv", index=False)
+
+
+# Count movies and TV shows by release year
+content_by_year = (
+    df.groupby(["release_year", "type"])
+    .size()
+    .reset_index(name="count")
+)
+
+print(content_by_year.head())
+
+# Export for Tableau
+content_by_year.to_csv("data/content_by_year.csv", index=False)
+
+
+# Count titles by rating
+ratings = (
+    df["rating"]
+    .fillna("Unknown")
+    .value_counts()
+    .reset_index()
+)
+
+ratings.columns = ["rating", "count"]
+
+print(ratings.head())
+
+# Export for Tableau
+ratings.to_csv("data/ratings.csv", index=False)
